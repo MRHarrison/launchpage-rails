@@ -15,10 +15,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: launch_development
+  host: localhost
+  database: betathread_launch
   pool: 5
-  username: codylittlewood
-  password:
+  username: mharrison
+  password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,7 +44,7 @@ test:
   encoding: unicode
   database: launch_test
   pool: 5
-  username: codylittlewood
+  username: mharrison
   password:
 
 production:
