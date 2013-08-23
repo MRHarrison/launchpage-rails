@@ -85,12 +85,10 @@ form.fanForm, form.artistForm {
 
 form.fanForm {
 	float: left;
-	margin-left: 100px;
 }
 
 form.artistForm {
 	float: right;
-	margin-right: 100px;
 }
 
 input[type="submit"] {
@@ -201,4 +199,8 @@ h1 em{
 }
 .custom{
 	display:none;
+}
+.sign-up {
+	margin: 75px auto;
+	width: 700px;
 }
