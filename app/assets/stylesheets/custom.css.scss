@@ -65,11 +65,10 @@ header ul {
 
 div#intro {
 	width: 600px;
-	margin: 0 auto 20px auto;
+	margin: 30px auto 20px auto;
 	padding: 20px;
 	text-align: justify;
 	border-radius: 5px;
-	background: #F2F2F2;
 }
 
 form {
@@ -113,34 +112,6 @@ button.artistBtn {
 
 
 /* --- 3. Text & Links --- */
-
-h1 {
-	font-family: "Arial", "Helvetica", sans-serif;
-	font-size: 4.6em;
-	line-height: 1.0em;
-	font-weight: bold;
-	letter-spacing: -3px;
-	margin-bottom: 0.25em;
-	color: #000;
-}
-
-h2 {
-	font-family: "Arial", "Helvetica", sans-serif;
-	font-size: 2.0em;
-	line-height: 1.0em;
-	font-weight: bold;
-	margin-bottom: 0.5em;
-	color: #000;
-}
-
-header p {
-	font-family: "Arial", "Helvetica", sans-serif;
-	font-size: 1.7em;
-	line-height: 1.0em;
-	font-weight: normal;
-	color: #666;
-}
-
 div#intro p {
 	font-family: "Arial", "Helvetica", sans-serif;
 	font-size: 1.6em;
@@ -159,3 +130,75 @@ form p {
 	text-shadow: 0 1px 1px #FFF;
 }
 
+body {
+	margin: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container{
+	width:900px;
+	margin:0 auto;
+}
+.sub-container{
+	margin:40px auto 0;
+	width:570px;
+	padding:10px 0;
+}
+.middle{
+	margin: 150px 0 -30px;
+}
+.middle h1, .middle{
+	text-align: center;
+}
+.middle h1{
+	font-size: 56px;
+	margin: 20px 0;
+}
+.middle small{
+	font-size: 10px;	
+}
+.middle p{
+	margin-top:0;
+}
+h1 em{
+	color:#666;
+}
+.call-to-action h3{
+	font-size: 32px;
+	margin: 13px 0;
+	padding: 0 10px;
+	text-align: right;
+	line-height: 1.1em
+}
+.middle h1 {
+	font-weight: 400;
+	letter-spacing: 13px;
+}
+.fl{
+	float:left;
+	padding-left:10px;
+}
+.seperator{
+	padding-right: 5px;
+	margin-right: 5px;
+	margin-left:-25px;
+	border-right: 2px solid #111;
+}
+.fl em{
+	margin-top:10px;
+	font-size: 13px;
+}
+.span3{
+	width:185px;
+}
+.call-to-action{
+	width:265px;
+}
+.call-to-action.info {
+	margin-top: 15px;
+}
+.center{
+	text-align:center;
+}
+.custom{
+	display:none;
+}

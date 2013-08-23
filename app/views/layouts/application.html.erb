@@ -10,6 +10,7 @@
 	<body>
 		<div id="wrapper" class="clearFix">
 			<%= render 'layouts/header' %>
+
 			<%= yield %>
 		</div>
 
@@ -26,21 +27,21 @@
 				var fanForm = $('form.fanForm'); // Store User Type 1 form as a variable
 				var artistForm = $('form.artistForm'); // Store User Type 2 form as a variable
 
-				var fanBtn = $('<button></button>', {
-								text: 'I\'m User Type 1!',
-								class: 'btn fanBtn'}); // Create the "I'm User Type 1!" button
+				// var fanBtn = $('<button></button>', {
+				// 				text: 'I love fashion!',
+				// 				class: 'btn fanBtn'}); // Create the "I'm User Type 1!" button
 
-				var artistBtn = $('<button></button>', {
-								text: 'I\'m User Type 2!',
-								class: 'btn artistBtn'}); // Create the "I'm User Type 2!" button
+				// var artistBtn = $('<button></button>', {
+				// 				text: 'I\'m a designer',
+				// 				class: 'btn artistBtn'}); // Create the "I'm User Type 2!" button
 
-				intro.append(fanBtn, artistBtn); // Place the buttons at the end of the intro
+				// intro.append(fanBtn, artistBtn); // Place the buttons at the end of the intro
 
-				fanBtn.on('click', function(){
+				$('.fanBtn').on('click', function(){
 					fanForm.slideToggle(250);
 				}); // Functionality for User Type 1's button - reveal email form
 
-				artistBtn.on('click', function(){
+				$('.artistBtn').on('click', function(){
 					artistForm.slideToggle(250);
 				}); // Functionality for User Type 1's button - reveal email form
 

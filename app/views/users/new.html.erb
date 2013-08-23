@@ -1,7 +1,23 @@
 <% provide(:title, "Sign up for beta access") %>
-				<div id="intro" class="clearFix">
-				<p>Write a little something about your project here. A little hype. C'mon, get us all excited about what you're working on! You should describe the two types of people you're looking attract to your project and lead them to the buttons below. When they click a button, their particular email submission field will be revealed. Swanky.</p>
-			</div>
-	<%= render 'users/fan_form' %>
-	<%= render 'users/artist_form' %>
+
+    <div class="container">
+        <div class="sub-container">
+            <div class="fl seperator call-to-action">
+                <h3>fund fashion artisans</h3>
+            </div>
+            <div class="fl call-to-action info">
+                <p><em>Be the first to wear new fashion collections and give fashion creatives the chance at something big...</em></p>
+            </div>
+        </div>
+
+        <!-- Begin LaunchRock Widget -->
+        <!-- End LaunchRock Widget -->            
+    </div>
+    <div id="intro" class="well">
+    	<button class="btn btn-inverse fanBtn">I Love Fashion!</button>
+    	<button class="btn btn-inverse artistBtn">I'm a designer</button>
+    </div>
+
+		<%= render 'users/fan_form' %>
+		<%= render 'users/artist_form' %>
 	

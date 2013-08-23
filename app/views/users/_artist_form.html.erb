@@ -1,6 +1,6 @@
-<%= form_for(@user, :html => { :class => "artistForm"}) do |f| %>
-	<h2>User Type 2?</h2>
-	<p>Are you User Type 2? Here's some text telling you whether you should enter your email address below!</p>
+<%= form_for(@user, :html => { :class => "artistForm hide"}) do |f| %>
+	<h2>I'm a designer</h2>
+	<p>I want to be a featured designer on betathread. Please send me more info.</p>
 	<%= render 'shared/error_messages', object: f.object %>
 	<%= f.text_field :email, :placeholder => "Enter your email" %>
 	<%= f.hidden_field :usertype, :value => "2" %>
