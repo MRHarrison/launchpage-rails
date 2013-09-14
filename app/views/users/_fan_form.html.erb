@@ -1,8 +1,10 @@
 <%= form_for(@user, :html => { :class => "fanForm"}) do |f| %>
-	<h2>I love fashion!</h2>
-	<p>I want to support some of the best new fashion coming out.</p>
 	<%= render 'shared/error_messages', object: f.object %>
-	<%= f.text_field :email, :placeholder => "Enter your email" %>
 	<%= f.hidden_field :usertype, :value => "1" %>
-	<%= f.submit "Submit", class: "btn" %>
+	<div class="clearfix"></div>
+	<div class="input-append">
+		<%= f.text_field :email, :placeholder => "Enter your email", class: "span3" %>
+		<%= f.submit "Submit", class: "btn btn-inverse" %>
+	</div>
 <% end %>
+

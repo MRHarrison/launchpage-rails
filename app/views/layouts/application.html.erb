@@ -42,13 +42,19 @@
 
 				// intro.append(fanBtn, artistBtn); // Place the buttons at the end of the intro
 
-				$('.fanBtn').on('click', function(){
-					fanForm.slideToggle(250);
-				}); // Functionality for User Type 1's button - reveal email form
+				// $('.fanBtn').on('click', function(){
+				// 	fanForm.slideToggle(250);
+				// }); // Functionality for User Type 1's button - reveal email form
 
-				$('.artistBtn').on('click', function(){
-					artistForm.slideToggle(250);
-				}); // Functionality for User Type 1's button - reveal email form
+				// $('.artistBtn').on('click', function(){
+				// 	artistForm.slideToggle(250);
+				// }); // Functionality for User Type 1's button - reveal email form
+
+				$('#userType .radio input').on('click', function(){
+					var value = $(this).val();
+
+					$('#user_usertype').val(value);
+				});
 
 			})();
 

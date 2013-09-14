@@ -7,6 +7,37 @@
 */
 
 /* --- 1. Defaults, Structure & Resets --- */
+/* Fonts */
+@font-face{
+	font-family:'Century Gothic W01';
+	src: url("/assets/century-normal.woff");
+}
+@font-face{
+	font-family:'CenturyGothicW01-Italic';
+	src: url("/assets/century-italic.woff");
+}
+@font-face{
+	font-family:'Century Gothic W01 Bold';
+	src: url("/assets/century-bold.woff");
+}
+@font-face{
+	font-family:'CenturyGothicW01-BoldIt';
+	src: url("/assets/century-bold-italic.woff");
+}
+a, button, input{
+	font-family: "Century Gothic", 'Century Gothic W01', CenturyGothic, AppleGothic, sans-serif;
+	line-height: 1.6;
+}
+.italic{
+	font-family:'CenturyGothicW01-Italic';
+	line-height: 1.6;
+}
+h1, h2, h3, h3, h4, h5{
+	font-family: "Century Gothic", 'Century Gothic W01', CenturyGothic, AppleGothic, sans-serif;
+}
+h1.bold, h2.bold, h3.bold, h3.bold, h4.bold, h5.bold{
+	font-family: "Century Gothic", 'Century Gothic W01 Bold', CenturyGothic, AppleGothic, sans-serif;
+}
 
 .clearFix:after {
 	content: "."; 
@@ -17,8 +48,7 @@
 }
 
 input[type="text"], input[type="password"], textarea, input[type="text"]:focus, textarea:focus, input[type="password"] {
-    outline: none;
-    border: none;
+    border-radius: 0;
 }
 
 		
@@ -31,7 +61,7 @@ a img {
 }
 
 * {
-	margin: 0;
+	margin: 0 0px 0 2px;
 	padding: 0;
 }
 	
@@ -78,11 +108,11 @@ form {
 form.fanForm, form.artistForm {
 	width: 275px;
 	border-radius: 5px;
-	background: #F2F2F2;
-	padding: 20px;
-	text-align: center;
+	padding: 10px 0;
 }
-
+#user_email {
+	width: 195px;
+}
 form.fanForm {
 	float: left;
 }
@@ -141,58 +171,21 @@ body {
 	width:570px;
 	padding:10px 0;
 }
-.middle{
-	margin: 120px 0 -30px;
+header .middle {
+	margin: 200px auto 0px;
 }
-.middle h1, .middle{
-	text-align: center;
+.middle label{
+	font-size:12px;
 }
-.middle h1{
-	font-size: 56px;
-	margin: 20px 0;
+.middle {
+	width: 275px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
 }
-.middle small{
-	font-size: 10px;	
-}
-.middle p{
-	margin-top:0;
-}
-h1 em{
-	color:#666;
-}
-.call-to-action h3{
-	font-size: 32px;
-	margin: 13px 0;
-	padding: 0 10px;
-	text-align: right;
-	line-height: 1.1em
-}
-.middle h1 {
-	font-weight: 400;
-	letter-spacing: 13px;
-}
-.fl{
-	float:left;
-	padding-left:10px;
-}
-.seperator{
-	padding-right: 5px;
-	margin-right: 5px;
-	margin-left:-25px;
-	border-right: 2px solid #111;
-}
-.fl em{
-	margin-top:10px;
-	font-size: 13px;
-}
-.span3{
-	width:185px;
-}
-.call-to-action{
-	width:265px;
-}
-.call-to-action.info {
-	margin-top: 15px;
+.middle {
+	margin: 0 auto 20px;
 }
 .center{
 	text-align:center;
@@ -207,4 +200,10 @@ h1 em{
 .sub-container.social {
 width: 200px;
 margin-top: 20px;
+}
+.logo{
+	background: url("/assets/logo.png") no-repeat 0 0;
+	font-size:0;
+	width:100%;
+	height:105px;
 }
